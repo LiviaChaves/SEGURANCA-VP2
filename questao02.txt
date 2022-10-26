@@ -1,0 +1,37 @@
+FERRAMENTA OpenSSL
+
+  - É uma ferramenta e biblioteca robusta de nivel comercial para protocolos TLS e SSL. 
+  >>Arquivo Instalação Disponibilizado em: https://sourceforge.net/projects/openssl/files/latest/download
+  
+  1) Extrai o arquivo zip 
+  2) Abre a pasta bin dentro do cmd 
+  3) Configurando : set OPENSSL_CONF = openssl.cnf
+  4) openssl.exe
+  5) Criando uma chaves Privada e Armazenando em private.pem 
+     >> genrsa -out private.pem 2048
+  6) extraindo a chave pública a partir da chave privada (princípio RSA #3) para um novo arquivo public.pem
+     >> rsa -in private.pem -pubout -out public.pem 
+  7) Dentro da Sua pasta bin vai ser criado dois arquivos pem, um refente a chave privada e outro a chave publica 
+
+-------------------------------------------------------------------------------------------------------------------
+
+FERRAMENTA OpenSSH (windows)
+
+1) No cmd digite : ssh-keygen 
+2) Cria o nome da chave e onde vai armazenar a chave 
+3) cria uma passphrase  
+4) digita sua passphrase
+5) C:\Users\(nome_de_utilizador) vai está a chave criada 
+
+----------------------------------------------------------------------------------------------------
+
+FERRAMENTA GPG 
+
+Baixar :
+https://gpg4win.org/download.html
+
+2) abir no cmd a pasta bin do programa instaldo 
+3) executar o comando gpg --gen-key
+4) Colocar as credenciais pedidas e depois selecionar a opção (O)Key 
+5) Criar uma pssphrase 
+6) chaves geradas
